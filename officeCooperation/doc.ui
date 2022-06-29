@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doc</class>
+ <widget class="QMainWindow" name="doc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1430</width>
+    <height>905</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/new/prefix1/33.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(190, 255, 191, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>1161</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="tabChangesFocus">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>130</y>
+      <width>341</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout"/>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>241</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string notr="true">1</string>
+     </property>
+    </column>
+   </widget>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>treeWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1430</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(188,255,190);</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_Open"/>
+    <addaction name="separator"/>
+    <addaction name="action_Save"/>
+    <addaction name="action_SaveAs"/>
+    <addaction name="action_Close"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_Cancel"/>
+    <addaction name="action_Cut"/>
+    <addaction name="action_Copy"/>
+    <addaction name="action_Paste"/>
+    <addaction name="action_Delete"/>
+    <addaction name="separator"/>
+    <addaction name="action_Find"/>
+    <addaction name="action_SelectAll"/>
+    <addaction name="separator"/>
+    <addaction name="action_Time"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>格式</string>
+    </property>
+    <addaction name="action_Font"/>
+    <addaction name="action_Color"/>
+    <addaction name="action_Italic"/>
+    <addaction name="action_Underline"/>
+    <addaction name="separator"/>
+    <addaction name="action_LAlign"/>
+    <addaction name="action_CAlign"/>
+    <addaction name="action_RAlign"/>
+    <addaction name="action_JAlign"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_About"/>
+    <addaction name="action_Exit"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(188, 255, 190)</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="newProject"/>
+   <addaction name="openProject"/>
+   <addaction name="action"/>
+   <addaction name="action_Open"/>
+   <addaction name="action_Save"/>
+   <addaction name="action_SaveAs"/>
+   <addaction name="action_Cut"/>
+   <addaction name="action_Copy"/>
+   <addaction name="action_Paste"/>
+   <addaction name="action_Font"/>
+   <addaction name="action_LAlign"/>
+   <addaction name="action_CAlign"/>
+   <addaction name="action_RAlign"/>
+   <addaction name="action_JAlign"/>
+   <addaction name="action_Time"/>
+   <addaction name="action_About"/>
+   <addaction name="action_Exit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/newfile.png</normaloff>:/image/QtPic/newfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建文件</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/open.png</normaloff>:/image/QtPic/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/save.png</normaloff>:/image/QtPic/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_SaveAs">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/saveas.png</normaloff>:/image/QtPic/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="icon">
+    <iconset>
+     <normaloff>../QtPic/关闭.png</normaloff>../QtPic/关闭.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_Cancel">
+   <property name="text">
+    <string>撤销Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_Cut">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/cut.png</normaloff>:/image/QtPic/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切Ctrl+X</string>
+   </property>
+   <property name="toolTip">
+    <string>剪切Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_Copy">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/copy.png</normaloff>:/image/QtPic/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_Paste">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/paste.png</normaloff>:/image/QtPic/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_Delete">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/图片24.png</normaloff>:/new/prefix1/图片24.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="action_Find">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/图片23.png</normaloff>:/new/prefix1/图片23.png</iconset>
+   </property>
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="action_Exit">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/exit.png</normaloff>:/image/QtPic/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_SelectAll">
+   <property name="text">
+    <string>全选Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Time">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/time.png</normaloff>:/image/QtPic/time.png</iconset>
+   </property>
+   <property name="text">
+    <string>时间</string>
+   </property>
+  </action>
+  <action name="action_Font">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/font.png</normaloff>:/image/QtPic/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>字体</string>
+   </property>
+  </action>
+  <action name="action_Color">
+   <property name="text">
+    <string>字体颜色</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/about.png</normaloff>:/image/QtPic/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于记事本</string>
+   </property>
+  </action>
+  <action name="action_Italic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>字体倾斜</string>
+   </property>
+  </action>
+  <action name="action_Underline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>下划线</string>
+   </property>
+  </action>
+  <action name="action_LAlign">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/alignleft.png</normaloff>:/image/QtPic/alignleft.png</iconset>
+   </property>
+   <property name="text">
+    <string>左对齐</string>
+   </property>
+  </action>
+  <action name="action_RAlign">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/alignright.png</normaloff>:/image/QtPic/alignright.png</iconset>
+   </property>
+   <property name="text">
+    <string>右对齐</string>
+   </property>
+  </action>
+  <action name="action_CAlign">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/aligncenter.png</normaloff>:/image/QtPic/aligncenter.png</iconset>
+   </property>
+   <property name="text">
+    <string>居中</string>
+   </property>
+  </action>
+  <action name="action_JAlign">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/QtPic/alignboth.png</normaloff>:/image/QtPic/alignboth.png</iconset>
+   </property>
+   <property name="text">
+    <string>两端对齐</string>
+   </property>
+  </action>
+  <action name="newProject">
+   <property name="text">
+    <string>新建项目</string>
+   </property>
+   <property name="toolTip">
+    <string>新建项目</string>
+   </property>
+  </action>
+  <action name="openProject">
+   <property name="text">
+    <string>打开项目</string>
+   </property>
+   <property name="toolTip">
+    <string>打开项目</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
